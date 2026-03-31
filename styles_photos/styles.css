@@ -372,8 +372,7 @@ time {
     scroll-margin-top: 90px;
   }
   .koodi {  
-    padding: 0.3rem;
-    font-size: 0.75rem;
+    padding: 0;
   }
     .footer {
     flex-direction: column;
