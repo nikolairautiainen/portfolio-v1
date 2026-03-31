@@ -391,9 +391,10 @@ time {
 }
 /*SKAALAUTUVUUS KOODI 900px*/
 @media (max-width: 900px) {
-  .koodi {
-    transform: translate(-50%, -50%) scale(0.6);
-    padding: 1rem 1.5rem;
-    overflow: hidden;
+  #education, #experience, #aboutme {
+    scroll-margin-top: 90px;
+  }
+  .koodi {  
+    padding: 0.3rem;
   }
 }
