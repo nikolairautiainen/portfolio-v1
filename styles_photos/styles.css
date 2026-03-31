@@ -32,7 +32,7 @@
 .left {
   text-align: left;
 }
-.korjaus {
+#education, #experience, #aboutme {
   scroll-margin-top: 70px;
 }
 .korjausp {
@@ -351,15 +351,30 @@ time {
   font-size: 0.8rem;
   opacity: 0.6;
 }
-/*LAATIKKOILLE SKAALAUTUVUUTTA*/
+/*SKAALAUTUVUUS 900px*/
 @media (max-width: 900px) {
-  .laatikko {
-    width: 18.75rem;
+  nav {
+    flex-direction: column;
+    height: auto;
+    padding: 0px; 
   }
-}
-/*SKAALAUTUVUUS FOOTER & H1*/
-@media (max-width: 900px) {
-  .footer {
+  .nav_links {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding-bottom: 0.5rem;
+  }
+  .nav_links a i {
+    display: none;
+  }
+    #education, #experience, #aboutme {
+    scroll-margin-top: 90px;
+  }
+  .koodi {  
+    padding: 0.3rem;
+  }
+    .footer {
     flex-direction: column;
   }
   .footer_links {
@@ -371,30 +386,9 @@ time {
   }
   .title {
     margin-top: 3rem;
-    padding-top: 6rem;
+    padding-top: 3rem;
   }
-}
-/*SKAALAUTUVUUS NAV*/
-@media (max-width: 900px) {
-  nav {
-    flex-direction: column;
-    height: auto;
-    padding: 0px;
-  }
-  .nav_links {
-    width: 100%;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-    padding-bottom: 0.5rem;
-  }
-}
-/*SKAALAUTUVUUS KOODI 900px*/
-@media (max-width: 900px) {
-  #education, #experience, #aboutme {
-    scroll-margin-top: 90px;
-  }
-  .koodi {  
-    padding: 0.3rem;
+  .laatikko {
+    width: 18.75rem;
   }
 }
