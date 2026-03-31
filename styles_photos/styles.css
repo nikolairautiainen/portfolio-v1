@@ -393,3 +393,8 @@ time {
     width: 18.75rem;
   }
 }
+@media (max-width: 600px) {
+    .koodi {
+    padding: 0.3rem;
+  }
+}
