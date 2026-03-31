@@ -398,6 +398,7 @@ time {
 }
 @media (max-width: 900px) {
   #education, #experience, #aboutme {
-    padding-top: 1.5rem;
+    margin-top: 1.5rem;
+    overflow: hidden;
   }
 }
