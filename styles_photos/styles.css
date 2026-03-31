@@ -398,7 +398,7 @@ time {
   }
 }
 @media (max-width: 900px) {
-  #education, #experience, #aboutme {
-    margin-top: 2rem;
+  body {
+    margin-top: 6rem;
   }
 }
