@@ -48,7 +48,6 @@
   position: relative;
 }
 body, html {
-  overflow-x: hidden;
   margin: 0;
   font-family: "Be Vietnam Pro", sans-serif;
   font-weight: 400;
@@ -160,8 +159,7 @@ nav {
   color: var(--color-white);
   text-shadow:
   3px 3px 6px rgba(0, 0, 0, 0.90),
-  0 0 15px rgba(0, 0, 0, 0.75);  
-  overflow: hidden;
+  0 0 15px rgba(0, 0, 0, 0.75);
   border-left: 0.2rem solid var(--color-punainen);
 }
 /*OTSIKOT*/
@@ -394,7 +392,12 @@ time {
 /*SKAALAUTUVUUS KOODI 900px*/
 @media (max-width: 900px) {
   .koodi {
-    transform: translate(-50%, -50%) scale(0.85);
+    transform: translate(-50%, -50%) scale(0.75);
     padding: 1rem 1.5rem;
+  }
+}
+@media (max-width: 900px) {
+  #education, #experience, #aboutme {
+    padding-top: 1.5rem;
   }
 }
