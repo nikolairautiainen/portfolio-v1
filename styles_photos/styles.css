@@ -130,7 +130,6 @@ nav {
  /*TAUSTA*/
 .bg_image {
   background-image: url(perho.jpg);
-  background-color: var(--color-harmaa);
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -140,8 +139,7 @@ nav {
   left: 0;
   width: 100%;
   z-index: -1;
-  transform: translateZ(0);
-  will-change: transform;
+  background-attachment: scroll;
 }
 /*ETUSIVUN KOODI*/
 .koodi {
@@ -392,10 +390,10 @@ time {
     padding-bottom: 0.5rem;
   }
 }
-/*SKAALAUTUVUUS KOODI*/
+/*SKAALAUTUVUUS KOODI 900px*/
 @media (max-width: 900px) {
   .koodi {
-    padding: 1rem;
-    width: min(100%, 30rem);
+    transform: translate(-50%, -50%) scale(0.85);
+    padding: 1rem 1.5rem;
   }
 }
