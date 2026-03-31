@@ -372,7 +372,8 @@ time {
     scroll-margin-top: 90px;
   }
   .koodi {
-    padding: 0.6rem;
+    transform: translate(-50%, -50%) scale(0.75);
+    padding: 0.3rem;
   }
   .footer {
     flex-direction: column;
@@ -394,12 +395,6 @@ time {
   }
   .laatikko:hover {
     transform: none;
-    box-shadow: none;
   }
 }
 
-@media (max-width: 600px) {
-    .koodi {
-    padding: 0.3rem;
-  }
-}
