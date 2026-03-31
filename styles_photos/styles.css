@@ -48,6 +48,7 @@
   position: relative;
 }
 body, html {
+  overflow-x: hidden;
   margin: 0;
   font-family: "Be Vietnam Pro", sans-serif;
   font-weight: 400;
@@ -163,6 +164,11 @@ nav {
   overflow: hidden;
   border-left: 0.2rem solid var(--color-punainen);
 }
+#code-snippet {
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
 /*OTSIKOT*/
 .title {
   text-align: center;
