@@ -394,11 +394,11 @@ time {
   .koodi {
     transform: translate(-50%, -50%) scale(0.75);
     padding: 1rem 1.5rem;
+    overflow: hidden;
   }
 }
 @media (max-width: 900px) {
   #education, #experience, #aboutme {
-    margin-top: 1.5rem;
-    overflow: hidden;
+    scroll-margin-top: 1.5rem;
   }
 }
