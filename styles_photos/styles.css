@@ -33,7 +33,7 @@
   text-align: left;
 }
 #education, #experience, #aboutme {
-  scroll-margin-top: 70px;
+  scroll-margin-top: 75px;
 }
 .korjausp {
   padding-left: 15px;
@@ -169,7 +169,6 @@ nav {
   color: var(--color-white);
   margin-top: 0px;
   margin-bottom: 2.8rem;
-
   text-shadow:
   3px 3px 6px rgba(0, 0, 0, 0.90),
   0 0 15px rgba(0, 0, 0, 0.75);
