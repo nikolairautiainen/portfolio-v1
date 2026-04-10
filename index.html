@@ -182,43 +182,29 @@
 <!-----------------------------------------------------------FOOTER END---------------------------------------------------->
 <script>
 //SCROLL SPY
-const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll(".nav_links a, .nav_logo a");
-const footer = document.getElementById("contact");
 
-function updateActiveLink() {
-  let current = "";
-  const offset = 75;
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach(entry => {
+      const id = entry.target.getAttribute("id");
+      const link = document.querySelector(`a[href="#${id}"]`);
 
-  sections.forEach(section => {
-    const sectionTop = section.offsetTop;
-    const sectionHeight = section.clientHeight;
-
-    if (window.scrollY + offset >= sectionTop &&
-        window.scrollY + offset < sectionTop + sectionHeight) {
-      current = section.id;
-    }
-  });
-
-  const footerTop = footer.offsetTop;
-  const footerHeight = footer.clientHeight;
-
-  const footerVisible =
-    window.scrollY + window.innerHeight >= footerTop + footerHeight / 3;
-
-  if (footerVisible) {
-    current = "contact";
+      if (entry.isIntersecting) {
+        navLinks.forEach(a => a.classList.remove("active"));
+        if (link) link.classList.add("active");
+      }
+    });
+  },
+  {
+    root: null,
+    threshold: 0.4,
   }
+);
 
-  navLinks.forEach(link => {
-    link.classList.toggle("active", link.getAttribute("href") === "#" + current);
-  });
-}
-
-window.addEventListener("scroll", updateActiveLink);
-
-updateActiveLink();
-
+document.querySelectorAll("section, footer").forEach(section => {
+  observer.observe(section);
+});
 
 // ETUSIVUN KOODI PYTHON
 const code = [
